@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/html-css-and-flexbox-uAiTCY2by](https://www.frontendmentor.io/solutions/html-css-and-flexbox-uAiTCY2by)
+- Live Site URL: [https://ezequielsan.github.io/Intro-component-with-sign-up-form-challenge-on-Frontend-Mentor](https://ezequielsan.github.io/Intro-component-with-sign-up-form-challenge-on-Frontend-Mentor)
 
 ## My process
 
@@ -97,7 +97,7 @@ CSS properties for validations (:valid and :invalid)
 
 ### Continued development
 
-It's been a while since I stopped studying Front-end Development because of university studies, but this week I'm going back to school, I intend to start again, getting back to basics and progressing, that is, I'm going to do many projects this year for mine. improvement in the area.
+It's been a while since I stopped studying Front-end Development because of university studies, but this week I'm going back to school, I intend to start again, getting back to basics and progressing, that is, I'm going to do many projects this year for my improvement in the area.
 
 ### Useful resources
 
