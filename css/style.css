@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 1rem;
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%);
+  --color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background: url(../images/bg-intro-desktop.png) var(--color-red);
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero {
+  flex-basis: 50%;
+  padding: 2rem;
+}
+
+.cta {
+  flex-basis: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.25rem;
+  line-height: 1.25;
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.hero p {
+  color: var(--color-white);    
+  margin-top: 1.5rem;
+}
+
+.cta .feature {
+  padding: 1.15rem;
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 7px 0px hsl(0deg 0% 8% / 17%);
+  transition: .3s;
+}
+
+.cta .feature span {
+  font-weight: 600;
+}
+
+.cta form {
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: .65rem;
+}
+
+.cta form .form-group {
+  position: relative;
+}
+
+.cta form input {
+  width: 100%;
+  padding: 1rem 1.75rem;
+  border-radius: .4rem;
+  outline: none;
+  margin-bottom: 1.5rem;
+  border: 2px solid #dedede;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+  transition: all .3s;
+}
+
+.cta form .validity-icon::after {
+  content: url(../images/icon-checkmark.svg);
+  position: absolute;
+  right: 22px;
+  top: 15px;
+  z-index: 999;
+  opacity: 0;
+}
+
+.cta form .validity-icon::before {
+  content: url(../images/icon-error.svg);
+  position: absolute;
+  right: 22px;
+  top: 15px;
+  z-index: 999;
+  opacity: 0;
+}
+
+.cta input:focus:valid {
+  border-color: var(--color-green); 
+}
+
+.cta input:focus:valid + .validity-icon::after {
+  opacity: 1; 
+}
+
+.cta input:focus:invalid {
+  border-color: var(--color-red); 
+}
+
+.cta input:focus:invalid + .validity-icon::before{
+  opacity: 1;
+}
+
+.cta form input::placeholder {
+  font-size: .9rem;
+  font-weight: 500;
+  font-family: var(--font-family);
+}
+
+.cta form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0 .9rem 0;
+  border: none;
+  border-radius: .5rem;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: pointer;
+  border-bottom: 4px solid hsl(154deg 63% 44%);
+  transition: .3s;
+}
+
+.cta form button:active {
+  border-bottom: 4px solid hsl(154deg 66% 37%);
+}
+
+.cta form button:hover {
+  border-color: #6bc49d;
+  background-color: #49df9e;
+}
+
+.cta form p {
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--color-grayish-blue);
+  margin: .8rem auto 0 auto;
+}
+
+.cta form p a {
+  color: var(--color-red);
+  font-weight: 700;
+}
+
+.attribution {
+  position: absolute;
+  font-size: 11px;
+  text-align: center;
+  bottom: 1rem;
+  right: 40%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1024px) {
+ .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .hero p {
+    text-align: center;
+  }
+
+  .attribution {
+    right: 30%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(../images/bg-intro-mobile.png) var(--color-red);
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero, .cta {
+    padding: 0;
+  }
+
+  .hero {
+    margin-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .cta {
+    padding-bottom: 5rem;
+  }
+
+  .cta form {
+    padding: 2rem;
+  }
+
+  .attribution {
+    right: 0%;
+    bottom: -30%;
+  }
+}
