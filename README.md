@@ -101,7 +101,7 @@ It's been a while since I stopped studying Front-end Development because of univ
 
 ### Useful resources
 
-- [Animatio.css](https://animate.style) - This is the link to the Animation.css library website
+- [Animation.css](https://animate.style) - This is the link to the Animation.css library website
 - [Valid property](https://css-tricks.com/almanac/selectors/v/valid/) - Here is the link that talks a little about the pseudo-element :valid
 
 ## Author
